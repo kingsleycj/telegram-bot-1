@@ -33,12 +33,12 @@ async function handleMessage(messageObj) {
           // we want to send a welcome message to the user.
           return sendMessage(
             chatId,
-            `Hello, I'm Kingsley's bot, i can helo me learn about tlegram`
+            `Hello, I'm Kingsley's bot, i can help you learn more about telegram`
           );
         default:
           return sendMessage(
             chatId,
-            `hey ${first_name}, i dont know that command`
+            `hey ${messageObj.from.first_name}, i dont know that command`
           );
       }
     } else {
